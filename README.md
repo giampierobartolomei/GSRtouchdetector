@@ -1,7 +1,7 @@
 # GSR touch detector
 
-This prototype consist in a soft-robotic interface that inflates to evoke a spiral “goosebumps” effect while sensing **autonomic touch responses** via **GSR** (electrodermal activity).  
-Goal: **detect touch** and related arousal from the nervous system using GSR, and actuate pneumatic feedback.
+This prototype consist in a silicone-soft-robotic interface that inflates to evoke a spiral “goosebumps” effect while sensing **autonomic touch responses** via **GSR** (electrodermal activity).  
+Goal: **detect touch** and related arousal from the nervous system using GSR, and actuate pneumatic feedback on the soft robotic interface. This is possible thanks to real-time data analysis and lightweight machine learning model.
 
 ![AWE-POD Prototype](IMG_5433.jpg)
 

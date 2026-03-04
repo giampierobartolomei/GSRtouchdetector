@@ -1,9 +1,8 @@
 /*
  * GSR Touch Detector + PWM Pump "breath" + LED feedback – 20 Hz
- * Identico schema ADC→µS del logger di acquisizione.
  * Pipeline: LP 0.5 Hz (Butter 2°), SCL EMA τ=10 s, detector, feature 0–3 s, RF micromlgen.
- * Filtro anti-artefatti opzionale (ENABLE_ARTIFACT_FILTER).
- * Plot grezzo µS opzionale (ENABLE_PLOT).
+ * Optional anti-artifact filter (ENABLE_ARTIFACT_FILTER).
+ * Plot raw uS data (ENABLE_PLOT).
  */
 
 #include <math.h>
@@ -14,8 +13,8 @@
 #include "rf_touch.h"
 
 // ===== SWITCH =====
-bool ENABLE_ARTIFACT_FILTER = true;  // ON/OFF filtro anti-artefatti
-bool ENABLE_PLOT            = true; // ON/OFF stampa µS per plotting
+bool ENABLE_ARTIFACT_FILTER = true;  
+bool ENABLE_PLOT            = true; 
 
 // ===== PIN & CALIBRAZIONE =====
 const int GSR_PIN = 32;
